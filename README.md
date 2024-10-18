@@ -16,6 +16,7 @@ how to run the project?
 
 1)download the project 
 2)go to the project path enter
+    
     a)frontend:-
         i)get to location of frontend in cmd
         ii)*install all the dependencies mention above*
