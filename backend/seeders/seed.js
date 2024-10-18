@@ -6,7 +6,8 @@ const connectDB = require('../config/db');
 const seedData = async () => {
     try {
         await connectDB();
-        const { data } = await axios.get('https://s3.amazonaws.com/roxiler.com/product_transaction.json');
+        // please add this link below in axios.get()'https://s3.amazonaws.com/roxiler.com/product_transaction.json'
+        const { data } = await axios.get();
         await Transaction.insertMany(data);
         console.log('Data seeded successfully');
         mongoose.connection.close();
